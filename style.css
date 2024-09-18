@@ -1,0 +1,12 @@
+body {
+    background-color: blanchedalmond;
+}
+
+nav {
+    background-color: lightgreen;
+    opacity: 0.6;
+}
+
+Dog {
+    width: 30px;
+}
