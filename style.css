@@ -5,8 +5,17 @@ body {
 nav {
     background-color: lightgreen;
     opacity: 0.6;
+    padding: 30px 20px;
+    margin: 0px 10px 20px;
+    border-radius: 10px;
+    border-style: outset;
 }
 
-Dog {
-    width: 30px;
+img.Logo {
+    width: 50px;
+}
+
+img.Dog {
+    width: 60px;
+    border-radius: 10px;
 }
