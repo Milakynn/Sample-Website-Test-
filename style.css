@@ -1,21 +1,40 @@
 body {
-    background-color: blanchedalmond;
+    background-image: url(Voilier.jpg);
+    width: 100%;
+    margin: 0;
 }
 
-nav {
-    background-color: lightgreen;
-    opacity: 0.6;
-    padding: 30px 20px;
-    margin: 0px 10px 20px;
-    border-radius: 10px;
+header {
+    background-color: rgba(127, 255, 212, 0.473);
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     border-style: outset;
 }
 
-img.Logo {
+/* ul {
+    background-color: lightgreen;
+    opacity: 0.6;
+    width: 100%;
+    border-radius: 10px;
+    border-style: outset;
+    position: fixed;
+    top: 0px;
+} */
+
+h1 {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.Logo {
     width: 50px;
 }
 
-img.Dog {
+.Dog {
     width: 60px;
     border-radius: 10px;
 }
