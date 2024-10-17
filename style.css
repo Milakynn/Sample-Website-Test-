@@ -49,6 +49,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.group {
+    display: flex;
 }
 
 ul {
@@ -134,6 +139,32 @@ ul li > a, .dropdown li > a {
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+.menu .search-container {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+}
+
+.menu input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.menu .search-container button {
+    padding: 6px 10px;
+    /* margin-top: 8px; */
+    margin-right: 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu .search-container button:hover {
+    background-color: aqua;
 }
 
 /* For mobile phones: */
