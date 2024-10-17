@@ -44,28 +44,35 @@ body {
     width: 5%;
 }
 
-ul {
+.menu {
     background-color: wheat;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+ul {
+    
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    /* flex-wrap: wrap;
-    flex-direction: row; */
+    flex-wrap: wrap;
+    flex-direction: row;
     /* justify-content: space-between; */
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 ul li {
-    width: 5%;
+    /* width: 5%; */
     /* height: 5%; */
     text-align: center;
-    padding: 15px 18px;
 }
 
 ul a {
     text-decoration: none;
     color: black;
+    padding: 15px 18px;
 }
 
 ul li:hover {
@@ -77,6 +84,23 @@ ul li:hover {
 ul a.active {
     background-color: aliceblue;
     color: brown;
+}
+
+ul li > a, .dropdown li > a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dropdown li {
+    height: 100%;
+}
+
+.dropdown li > a::after {
+    content: "\203A";
+    transform: rotate(90deg);
+    margin-left: 1em;
+    font-weight: 700;
 }
 
 .dropbtn {
