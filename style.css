@@ -14,6 +14,11 @@ body {
     clear: both;
     display: table;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
   
 [class*="col-"] {
     float: left;
@@ -41,13 +46,13 @@ body {
 }
 
 .logo-header {
-    width: 5%;
+    width: 10%;
 }
 
 .menu {
     background-color: wheat;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     justify-content: space-between;
 }
@@ -173,6 +178,9 @@ ul li > a, .dropdown li > a {
 }
   
 @media only screen and (min-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -186,6 +194,8 @@ ul li > a, .dropdown li > a {
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+
+    
 }
 
 @media only screen and (min-width: 768px) {
