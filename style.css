@@ -7,12 +7,13 @@ body {
     /* width: 100%; */
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
-  
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+    /* From https://css.glass */
+    /* background: rgba(120, 63, 180, 0.11); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(120, 63, 180, 0.11);
 }
 
 .row {
@@ -20,10 +21,16 @@ body {
     flex-wrap: wrap;
 }
   
-[class*="col-"] {
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* [class*="col-"] {
     float: left;
     padding: 0;
-}
+} */
   
 /* .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -52,13 +59,17 @@ body {
 .menu {
     background-color: wheat;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .group {
     display: flex;
+}
+
+.group .logo {
+    padding: 10px 10px;
 }
 
 ul {
@@ -148,13 +159,12 @@ ul li > a, .dropdown li > a {
 
 .menu .search-container {
     display: flex;
-    /* flex-direction: row-reverse; */
     align-items: center;
 }
 
 .menu input[type=text] {
     padding: 6px;
-    margin-top: 8px;
+    margin: 8px;
     font-size: 17px;
     border: none;
 }
@@ -172,15 +182,34 @@ ul li > a, .dropdown li > a {
     background-color: aqua;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+/* article */
+.article {
+    /* background-color: beige; */
+    color: white;
+    padding: 1em;
 }
+
+.social {
+    width: 15px;
+    display: flex;
+}
+
+.footer {
+    background-color: wheat;
+    text-align: center;
+    padding: 20px;
+}
+
+/* For mobile phones: */
+/* [class*="col-"] {
+    width: 100%;
+} */
   
-@media only screen and (min-width: 600px) {
-    .menu {
+@media only screen and (max-width: 700px) {
+    .group {
         flex-direction: column;
     }
+
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}

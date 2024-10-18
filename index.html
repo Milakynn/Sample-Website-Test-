@@ -11,18 +11,24 @@
 </head>
 
 <body>
+    <!-- header -->
     <div class="header">
         <img class="logo-header" src="icon-tea-leaf.png" alt="logo tea leaf">
         <h1>Cuppa's</h1>
     </div>
+
+    <!-- topnav bar using grid and flex responsive -->
     <div class="row">
         <div class="col-12 col-s-12 menu">
             <div class="group">
                 <a href="index.html"><img class="logo" src="icon-tea-leaf.png" alt="logo tea leaf"></a>
+                <!-- link -->
                 <ul>
                     <li><a class="active" href="index.html">Home</a></li>
+                    <!-- dropdown -->
                     <div class="dropdown">
                         <li><a class="dropbtn" href="tea.htlm">Tea</a></li>
+                        <!-- menu dropdown -->
                         <nav class="dropdown-menu">
                             <a href="tea-variety.html">Shop by variety</a>
                             <a href="tea-arrangement.html">Tea arrangement</a>
@@ -30,8 +36,10 @@
                             <a href="Blog-tuto-tea.html">Blog</a>
                         </nav>
                     </div>
+                    <!-- dropdown -->
                     <div class="dropdown">
                         <li><a class="dropbtn" href="teawares.htlm">Teawares</a></li>
+                        <!-- menu dropdown -->
                         <nav class="dropdown-menu">
                             <a href="collection.html">Collections</a>
                             <a href="adds-on.html">Add ons</a>
@@ -39,8 +47,10 @@
                         </nav>
                     </div>
                     <li><a href="sales.htlm">Sales</a></li>
+                    <!-- dropdown -->
                     <div class="dropdown">
                         <li><a class="dropbtn" href="about-us.htlm">About us</a></li>
+                        <!-- menu dropdown -->
                         <nav class="dropdown-menu">
                             <a href="shops.html">Our shops</a>
                             <a href="career.html">Careers</a>
@@ -48,26 +58,37 @@
                             <a href="blog.html">Why us ?</a>
                         </nav>
                     </div>
-                    <li><a href="login.htlm">Log in</a></li>
+                    <li><a href="login.htlm">Sign in</a></li>
                     <li><a href="cart.htlm">Cart</a></li>
                 </ul>
-            </div>
-            <div class="search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search..." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+                <!-- search bar -->
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- just to distinct the nav bar from the footer -->
+    <div class="row">
+        <div class="article">
+            <h2>Welcome</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, magnam expedita porro omnis fugit quidem exercitationem sint ea culpa quos autem illum tempore similique, unde recusandae explicabo quam ratione asperiores!<br></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, magnam expedita porro omnis fugit quidem exercitationem sint ea culpa quos autem illum tempore similique, unde recusandae explicabo quam ratione asperiores!</p>
+        </div>
+    </div>
+    
+    <!-- footer -->
+     <div class="footer col-12 col-s-12">
+        <div class="social">
+            <a href="#"><img class="facebook" src="icons-facebook.png" alt="logo FB"></a>
+            <a href="#"><img class="instagram" src="icons-instagram.png" alt="logo INSTA"></a>
+        </div>
+        <p>&copy;Made in Australia by Lindsay Kuilagi help by W3school</p>
+     </div>
+
 </body>
-
 </html>
-
-<!-- <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-</div> -->
